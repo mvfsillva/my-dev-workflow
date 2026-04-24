@@ -19,6 +19,12 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find str
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
 keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 
+-- Git
+keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "Open lazy git" })
+keymap.set("n", "<leader>gf", "<cmd>LazyGitCurrentFile<CR>", { desc = "Open lazy git for current file" })
+keymap.set("n", "<leader>gF", "<cmd>LazyGitFilterCurrentFile<CR>", { desc = "Filter lazy git to current file" })
+keymap.set("n", "<leader>gc", "<cmd>LazyGitConfig<CR>", { desc = "Open lazy git config" })
+
 -- Clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
